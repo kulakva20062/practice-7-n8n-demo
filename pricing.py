@@ -10,7 +10,7 @@ def subtotal(*amounts: int) -> int:
 
 
 def format_cents(value: int) -> str:
-    return f"{value / 100:.2f}"
+    return f"{'-' * (value < 0)}{abs(value) // 100}.{abs(value) % 100:02d}"
 
 
 def discount(value: int, percentage: int) -> int:
