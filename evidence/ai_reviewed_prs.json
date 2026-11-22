@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "pr_key": "kulakva20062/practice-7-n8n-demo#1",
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "pr_number": 1,
+    "mode": "primary",
+    "model": "gemma3:4b",
+    "trigger": "pr_opened",
+    "review_id": "6013026213",
+    "inline_comments": 2,
+    "reviewed_at": "2026-11-22T18:30:16.810+03:00",
+    "createdAt": "2026-11-22 15:30:16.816",
+    "updatedAt": "2026-11-22 15:30:16.816"
+  },
+  {
+    "id": 2,
+    "pr_key": "kulakva20062/practice-7-n8n-demo#1",
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "pr_number": 1,
+    "mode": "other",
+    "model": "qwen3:8b",
+    "trigger": "comment",
+    "review_id": "6013034157",
+    "inline_comments": 2,
+    "reviewed_at": "2026-11-22T18:32:24.488+03:00",
+    "createdAt": "2026-11-22 15:32:24.491",
+    "updatedAt": "2026-11-22 15:32:24.491"
+  }
+]

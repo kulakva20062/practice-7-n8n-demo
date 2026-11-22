@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "issue_key": "kulakva20062/practice-7-n8n-demo#2",
+    "issue_number": 2,
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "author": "kulakva20062",
+    "type": "bug",
+    "label": "bug",
+    "confidence": 0.95,
+    "processed_at": "2026-11-22T18:32:59.645+03:00",
+    "createdAt": "2026-11-22 15:32:59.659",
+    "updatedAt": "2026-11-22 15:32:59.659"
+  },
+  {
+    "id": 2,
+    "issue_key": "kulakva20062/practice-7-n8n-demo#3",
+    "issue_number": 3,
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "author": "kulakva20062",
+    "type": "feature",
+    "label": "feature",
+    "confidence": 0.95,
+    "processed_at": "2026-11-22T18:33:04.423+03:00",
+    "createdAt": "2026-11-22 15:33:04.426",
+    "updatedAt": "2026-11-22 15:33:04.426"
+  },
+  {
+    "id": 3,
+    "issue_key": "kulakva20062/practice-7-n8n-demo#4",
+    "issue_number": 4,
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "author": "kulakva20062",
+    "type": "task",
+    "label": "task",
+    "confidence": 0.95,
+    "processed_at": "2026-11-22T18:33:09.145+03:00",
+    "createdAt": "2026-11-22 15:33:09.149",
+    "updatedAt": "2026-11-22 15:33:09.149"
+  },
+  {
+    "id": 4,
+    "issue_key": "kulakva20062/practice-7-n8n-demo#5",
+    "issue_number": 5,
+    "repo": "kulakva20062/practice-7-n8n-demo",
+    "author": "kulakva20062",
+    "type": "unknown",
+    "label": "needs-triage",
+    "confidence": 0.6,
+    "processed_at": "2026-11-22T18:33:12.680+03:00",
+    "createdAt": "2026-11-22 15:33:12.684",
+    "updatedAt": "2026-11-22 15:33:12.684"
+  }
+]
