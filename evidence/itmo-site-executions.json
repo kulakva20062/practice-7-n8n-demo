@@ -74,14 +74,14 @@
     }
   },
   {
-    "executionId": "7514",
-    "mode": "webhook",
+    "executionId": "7701",
+    "mode": "retry",
     "status": "success",
-    "url": "https://n8n-itmo.cyrweb.ru/workflow/5TxcZj0jrj1W74VS/executions/7514",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/5TxcZj0jrj1W74VS/executions/7701",
     "nodes": [
       "GitHub Trigger",
       "Route event",
-      "Mode: primary (PR opened)",
+      "Mode: primary (/make_ai_review)",
       "Context",
       "Primary model? (dedup only for it)",
       "Data Table: already reviewed?",
@@ -96,6 +96,58 @@
       "Post review with inline comments",
       "Data Table: save reviewed PR",
       "Add label ReviewedByAI"
+    ]
+  },
+  {
+    "executionId": "7700",
+    "mode": "retry",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/5TxcZj0jrj1W74VS/executions/7700",
+    "nodes": [
+      "GitHub Trigger",
+      "Route event",
+      "Mode: other model (/make_other_ai_review)",
+      "Context",
+      "Primary model? (dedup only for it)",
+      "Get PR",
+      "Get PR files (patches)",
+      "Split diff into hunks",
+      "Which model?",
+      "Model: kimi-k2.5",
+      "Review · other model",
+      "Build inline review",
+      "Post review with inline comments",
+      "Data Table: save reviewed PR",
+      "Add label ReviewedByAI"
+    ]
+  },
+  {
+    "executionId": "7705",
+    "mode": "webhook",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/pQzKWGtJosscikct/executions/7705",
+    "nodes": [
+      "Run practice checks",
+      "Choose checks",
+      "Read GitHub evidence",
+      "Review practice?",
+      "Read review table",
+      "Check and report the result"
+    ]
+  },
+  {
+    "executionId": "7706",
+    "mode": "webhook",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/pQzKWGtJosscikct/executions/7706",
+    "nodes": [
+      "Run practice checks",
+      "Choose checks",
+      "Read GitHub evidence",
+      "Review practice?",
+      "Read historical metrics",
+      "Read automatic fixes",
+      "Check and report the result"
     ]
   }
 ]

@@ -18,6 +18,8 @@
 
 [Строки `ai_reviewed_prs`](evidence/ai_reviewed_prs.json) содержат номера PR, модели и идентификаторы опубликованных ревью.
 
+Обе команды также проверены на учебном n8n через KeyShop. Основное ревью выполнила `kimi-k3.1-pro`, второе мнение дала `kimi-k2.6`. Проверка `just test` на учебном сайте подтвердила inline-комментарии, пропуск повтора и записи обеих моделей. [Kimi 3.1 Pro](https://github.com/kulakva20062/practice-7-n8n-demo/pull/1#pullrequestreview-6015349487) · [Kimi K2.6](https://github.com/kulakva20062/practice-7-n8n-demo/pull/1#pullrequestreview-6015362100) · [Execution проверки №7705](https://n8n-itmo.cyrweb.ru/workflow/pQzKWGtJosscikct/executions/7705)
+
 ## 7.2 · Классификация обращений
 
 | Issue | Метка | Executions |
