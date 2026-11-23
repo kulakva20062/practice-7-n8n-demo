@@ -14,4 +14,4 @@ def format_cents(value: int) -> str:
 
 
 def discount(value: int, percentage: int) -> int:
-    return value * (100 - percentage) // 100
+    return (value * (100 - percentage) + 50) // 100
