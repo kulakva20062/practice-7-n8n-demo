@@ -1,0 +1,101 @@
+[
+  {
+    "executionId": "7510",
+    "mode": "webhook",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/3Aqjwd2KWrz6aLzY/executions/7510",
+    "nodes": [
+      "Run whole digest once",
+      "Config",
+      "GH: issues opened this week",
+      "GH: issues closed this week",
+      "GH: PRs opened this week",
+      "GH: PRs merged this week",
+      "Group by type & author",
+      "Data Table: load history",
+      "Compute Δ vs previous week",
+      "Data Table: save this week",
+      "Stats for AI",
+      "Model: kimi-k2.6",
+      "AI comment of the week (Basic LLM Chain)",
+      "Build HTML email",
+      "Gmail: send weekly report"
+    ],
+    "Gmail: send weekly report": {
+      "labelIds": [
+        "UNREAD",
+        "SENT",
+        "INBOX"
+      ]
+    }
+  },
+  {
+    "executionId": "7511",
+    "mode": "retry",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/BxOHzDz267mZZ5dG/executions/7511",
+    "nodes": [
+      "GitHub Trigger",
+      "Labeled `bug` and open?",
+      "Bug context",
+      "Data Table: already fixing?",
+      "Run exists?",
+      "Get repo tree",
+      "Pick source files",
+      "Get file contents",
+      "Prepare fix prompt",
+      "Fixer model: kimi-k2.6",
+      "AI fixer (Basic LLM Chain)",
+      "Fix output parser",
+      "Validate fix",
+      "Get base branch sha",
+      "Create fix branch",
+      "Commit fixed file",
+      "Open fix PR",
+      "Get PR diff",
+      "Prepare review prompt",
+      "Reviewer model: kimi-k2.5",
+      "Review output parser",
+      "AI reviewer (Basic LLM Chain)",
+      "Post AI review to PR",
+      "Approved, no serious issues?",
+      "Squash-merge into main",
+      "Merge confirmed?",
+      "Comment on issue: fixed",
+      "Data Table: record run"
+    ],
+    "Squash-merge into main": {
+      "merged": true,
+      "sha": "b9b00e3b6b7edfff9b504d18f09f5c5e24cc8d61"
+    },
+    "Open fix PR": {
+      "number": 6,
+      "html_url": "https://github.com/kulakva20062/practice-7-n8n-demo/pull/6"
+    }
+  },
+  {
+    "executionId": "7514",
+    "mode": "webhook",
+    "status": "success",
+    "url": "https://n8n-itmo.cyrweb.ru/workflow/5TxcZj0jrj1W74VS/executions/7514",
+    "nodes": [
+      "GitHub Trigger",
+      "Route event",
+      "Mode: primary (PR opened)",
+      "Context",
+      "Primary model? (dedup only for it)",
+      "Data Table: already reviewed?",
+      "PR already in table?",
+      "Get PR",
+      "Get PR files (patches)",
+      "Split diff into hunks",
+      "Which model?",
+      "Model: kimi-k2.6",
+      "Review · primary model",
+      "Build inline review",
+      "Post review with inline comments",
+      "Data Table: save reviewed PR",
+      "Add label ReviewedByAI"
+    ]
+  }
+]
